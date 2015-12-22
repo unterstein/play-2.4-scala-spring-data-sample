@@ -34,6 +34,16 @@ resolvers += "Spring Snapshots" at "http://maven.springframework.org/snapshot"
 
 # Step 3 - Add spring module (yeah, you need a module now!)
 
+For spring-guice we need a SpringModule, references the @Configuration. Module and configuration are located in app/modules.
+The configuration properties are located in conf/neo4j.conf.
+
+The magic trick to enable our module is to add the following line to a play configuration file of your choice (also conf/neo4j.conf in this example):
+
+```
+play.modules.enabled += "modules.SpringNeo4jModule"
+```
+
+
 # Step 4 - Add (sample) data model and repositories
 
 # Step 5 - Adapt controller to use repository
