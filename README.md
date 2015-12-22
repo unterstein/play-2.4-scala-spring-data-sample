@@ -8,7 +8,29 @@ In this repository i will show the needed X steps to kickstart the project.
 
 The initial step using "activator new -> play-scala" template and writing the skeleton of this README.
 
+
 # Step 2 - Add dependencies
+
+Added the following dependencies:
+
+```
+  // utilities
+  "javax.inject" % "javax.inject" % "1",
+  "com.sun.jersey" % "jersey-core" % "1.19",
+  "javax.validation" % "validation-api" % "1.1.0.Final",
+  // spring data
+  "org.springframework.data" % "spring-data-neo4j" % "3.4.2.RELEASE",
+  "org.springframework.data" % "spring-data-neo4j-rest" % "3.4.2.RELEASE",
+  // spring guice
+  "org.springframework.guice" % "spring-guice" % "1.0.0.BUILD-SNAPSHOT"
+```
+
+Spring-guice is not (yet) released officially, therefore we must add the following resolver:
+
+```
+resolvers += "Spring Snapshots" at "http://maven.springframework.org/snapshot"
+```
+
 
 # Step 3 - Add spring module (yeah, you need a module now!)
 
