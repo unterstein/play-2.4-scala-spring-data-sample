@@ -2,7 +2,8 @@
 
 Update 2.4 for the playframeork was a little bit tricky in terms of CDI (and scala / spring). I had problems getting my spring contexts start again. Therefore i needed to introduced spring-guice.
 
-In this repository i will show the needed X steps to kickstart the project.
+In this repository i will show the needed 6 steps to kickstart the project. All important steps are mentioned in this README.
+You can also have a look the first 6 commits (commit messages equals headlines in README), where i did exactly the same like what i described in this file, see https://github.com/unterstein/play-2.4-scala-spring-data-sample/commits/master .
 
 # Step 1 - Init the project
 
