@@ -46,9 +46,20 @@ play.modules.enabled += "modules.SpringNeo4jModule"
 
 # Step 4 - Add (sample) data model and repositories
 
-Added sample a data model and repository, taken from my good friends @tuxBurner awesome play-neo4jplugin, see https://github.com/tuxBurner/play-neo4jplugin.
+Added sample a data model and repository, taken from my good friend`s @tuxBurner awesome play-neo4jplugin, see https://github.com/tuxBurner/play-neo4jplugin.
 
 
 # Step 5 - Adapt controller to use repository
+
+Adapted changes to controller and added example index.scala.html (also taken from play-neo4jplugin).
+
+The trick is to use @Named and @Inject, see:
+```
+@Named
+class ApplicationController @Inject()(worldRepository: WorldRepository, initialDataService: InitialDataService) extends Controller {
+...
+}
+```
+
 
 # Step 6 - Add test data
