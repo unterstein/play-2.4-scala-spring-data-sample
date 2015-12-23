@@ -5,6 +5,15 @@ Update 2.4 for the playframeork was a little bit tricky in terms of CDI (and sca
 In this repository i will show the needed 6 steps to kickstart the project. All important steps are mentioned in this README.
 You can also have a look the first 6 commits (commit messages equals headlines in README), where i did exactly the same like what i described in this file, see https://github.com/unterstein/play-2.4-scala-spring-data-sample/commits/master .
 
+To start this example app, just clone this repo, browse to this folder in your shell and do
+
+```
+activator run
+```
+
+and open http://localhost:9000 in your favourite browser :-)
+
+
 # Step 1 - Init the project
 
 The initial step using "activator new -> play-scala" template and writing the skeleton of this README.
