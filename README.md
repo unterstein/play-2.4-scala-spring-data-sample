@@ -63,3 +63,9 @@ class ApplicationController @Inject()(worldRepository: WorldRepository, initialD
 
 
 # Step 6 - Add test data
+
+Test data already added in step 4, therefore nothing to do here! :-)
+
+
+Cheers,
+Johannes
