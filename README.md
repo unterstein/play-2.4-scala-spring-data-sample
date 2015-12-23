@@ -67,5 +67,18 @@ class ApplicationController @Inject()(worldRepository: WorldRepository, initialD
 Test data already added in step 4, therefore nothing to do here! :-)
 
 
+# Conclusion
+
+We saw how to initialize and start our spring context for spring-data, in this example for spring-data-neo4j. You can use this template for (nearly) all spring-data projects.
+For example you could use this for spring-data-elasticsearch, see https://github.com/unterstein/play-spring-data-elasticsearch-example .
+
+If you like the eBean style of more static access of your repositories, you might be interested in plugins to use your favourite database technology in your favourite style of coding.
+I would also prefer this style ;-)
+
+For neo4j, tuxBurner implemented a plugin: https://github.com/tuxBurner/play-neo4jplugin
+
+For elasticsearch, i implemented a plugin: https://github.com/unterstein/play-elasticplugin
+
+
 Cheers,
 Johannes
